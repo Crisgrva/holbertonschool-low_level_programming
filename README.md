@@ -1,1 +1,1 @@
-**Foundations > Low-level programming & Algorithm > Hatching out**
+**Foundations > Low-level programming & Algorithm**
