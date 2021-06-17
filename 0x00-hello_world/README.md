@@ -110,3 +110,9 @@ for argument in &quot;$@&quot; ; do
     ${BIN_PATH}/${BETTY_DOC} &quot;$argument&quot;
 done
 </code></pre>
+<ul>
+<li>Once saved, exit file and change permissions to apply to all users with <code>chmod a+x betty</code></li>
+<li>Move the <code>betty</code> file into <code>/bin/</code> directory or somewhere else in your <code>$PATH</code> with <code>sudo mv betty /bin/</code></li>
+</ul>
+
+<p>You can now type <code>betty &lt;filename&gt;</code> to run the Betty linter!</p>
