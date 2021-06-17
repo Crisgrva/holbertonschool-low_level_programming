@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	char  name[5] = "Flavio";
-	return ("Size of %zu", name);
+	ssize_t write(int fd, const void *buf, size_t nbytes);
+	return (0);
 }
