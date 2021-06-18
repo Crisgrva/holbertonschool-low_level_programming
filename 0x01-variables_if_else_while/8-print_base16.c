@@ -8,11 +8,11 @@
 int main(void)
 {
 	int number_0 = 48;
-	int number_6 = 54;
+	int number_9 = 57;
 	int letter_a = 97;
 	int letter_f = 102;
 
-	while (number_0 <= number_6)
+	while (number_0 <= number_9)
 	{
 		putchar(number_0);
 		number_0++;
