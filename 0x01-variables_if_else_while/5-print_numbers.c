@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Print alphabet in lowercase
- * Print all alphabet in lowercase
+ * main - Print numbers
+ * Print numbers from 0 to 9
  * Return: 0 (Success)
  */
 int main(void)
