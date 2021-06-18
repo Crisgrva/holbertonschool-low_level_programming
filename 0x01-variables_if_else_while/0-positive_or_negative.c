@@ -2,8 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* more headers goes there */
-/* betty style doc for function main goes there */
+/**
+ * main - Positive anything is better than negative nothing
+ * Print if 0 is iqual, greater or less
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 	int n;
@@ -13,11 +16,11 @@ int main(void)
 	/* your code goes there */
 
 	if (n == 0)
-	    printf ("%d is zero", n);
+		printf("%d is zero\n", n);
 	else if (n < 0)
-	    printf("%d is negative", n);
+		printf("%d is negative\n", n);
 	else if (n > 0)
-	    printf("%d is positive", n);
+		printf("%d is positive\n", n);
 
 	return (0);
 }
