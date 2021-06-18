@@ -7,14 +7,15 @@
  */
 int main(void)
 {
-        int letter = 97;
+	int number_0 = 48;
+	int number_9 = 57;
 
-        while (letter <= 122)
-        {
-                putchar(letter);
-                letter++;
-        }
-        putchar('\n');
-        return (0);
+	while (number_0 <= number_9)
+	{
+		putchar(number_0);
+		number_0++;
+	}
+	putchar('\n');
+	return (0);
 }
-~
+
