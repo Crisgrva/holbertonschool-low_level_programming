@@ -1,12 +1,12 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- * Return a string with her error
- * Return: Always 0 (Success)
+ *
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	ssize_t write(int fd, const void *buf, size_t nbytes);
-	return (0);
+        fprintf(stderr,
+"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+        return (1);
 }
