@@ -17,7 +17,7 @@ int main(void)
 
 	for (number_1 = 0; number_1 <= 98; number_1++)
 	{
-		for (number_2 = 0; number_2 <= 99; number_2++)
+		for (number_2 = 1; number_2 <= 99; number_2++)
 		{
 			first_1 = number_1 / 10;
 			second_1 = number_1 % 10;
