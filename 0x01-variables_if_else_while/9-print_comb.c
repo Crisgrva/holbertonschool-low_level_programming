@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Print numbers
- * Print numbers from 0 to 9
+ * main - Print comb
+ * Print possible combinations of single digit
  * Return: 0 (Success)
  */
 int main(void)
