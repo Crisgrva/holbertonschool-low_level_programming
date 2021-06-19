@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Comb3
- * Print all combinations between 2 numbers
+ * main - Software is eating the World
+ * Prints all possible combinations of two 2-digit numbers.
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 
 	for (number_1 = 0; number_1 <= 98; number_1++)
 	{
-		for (number_2 = 0;number_2 <= 99; number_2++)
+		for (number_2 = 0; number_2 <= 99; number_2++)
 		{
 			first_1 = number_1 / 10;
 			second_1 = number_1 % 10;
@@ -37,5 +37,5 @@ int main(void)
 			}
 		}
 	}
-	return(0);
+	return (0);
 }
