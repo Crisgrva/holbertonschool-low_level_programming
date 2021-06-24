@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
 * main - tests function that prints if integer is positive or negative
@@ -20,6 +21,6 @@ int main(void)
 		else
 			printf("%d ", i);
 	}
-
+	printf("\n");
 	return (0);
 }
