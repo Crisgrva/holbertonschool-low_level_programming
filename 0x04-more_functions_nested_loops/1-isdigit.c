@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* _isupper - Check is C is uppercase
+* _isdigit - Check is C is digit
 * @c: letter to evaluate
 * Return: 0
 */
