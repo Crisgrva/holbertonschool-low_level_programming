@@ -1,7 +1,7 @@
 <h1 class="gap">0x04. C - More functions, more nested loops</h1>
 
-      <div class="gap" id="project-description">
-  <h2>Resources</h2>
+<div class="gap" id="project-description">
+<h2>Resources</h2>
 
 <p><strong>Read or watch</strong>:</p>
 
