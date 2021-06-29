@@ -17,6 +17,7 @@ void puts_half(char *str)
 		count++;
 	}
 
+	printf("Count is: %d\n", count);
 	if (count % 2 != 0)
 	{
 		count--;
@@ -27,8 +28,10 @@ void puts_half(char *str)
 		half_count = count / 2;
 	}
 
-	for (; half_count <= count; half_count++)
+	for (; half_count < count; half_count++)
 	{
-		_putchar(str[half_count]);
+		if (str[half_count] != '\0')
+			_putchar(str[half_count]);
 	}
+	_putchar('\n');
 }
