@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* reset_to_98 - Reset the address of n variable
+* swap_int - Swap value of int *a to int *b
 * @a: variable to change the address
 * @b: variable to change the address
 * Return: 0
