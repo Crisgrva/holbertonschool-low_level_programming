@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "stdio.h"
 
 /**
 * print_rev - function that returns the length of a string.
@@ -15,6 +16,8 @@ void print_rev(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 		length++;
+
+	length--;
 
 	for (; length >= 0; length--)
 		_putchar(s[length]);
