@@ -14,6 +14,6 @@ void print_rev(char *s)
 		max_index = i;
 
 	for (; max_index != '\0'; max_index--)
-		_putchar(s[(max_index - 1)]);
+		_putchar(s[max_index]);
 	_putchar('\n');
 }
