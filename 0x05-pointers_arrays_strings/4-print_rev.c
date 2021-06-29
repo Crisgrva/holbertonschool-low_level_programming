@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
 * print_rev - function that returns the length of a string.
