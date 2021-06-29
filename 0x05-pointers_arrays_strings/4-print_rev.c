@@ -8,12 +8,16 @@
 
 void print_rev(char *s)
 {
-	int i, max_index;
+	int length;
+	int i;
+
+	length = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
-		max_index = i;
+		length++;
 
-	for (; max_index != '\0'; max_index--)
-		_putchar(s[max_index]);
+	for (; length >= 0; length--)
+		_putchar(s[length]);
+
 	_putchar('\n');
 }
