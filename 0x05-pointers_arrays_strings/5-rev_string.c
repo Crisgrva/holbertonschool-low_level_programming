@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "stdio.h"
 
 /**
 * rev_string - function that returns string reversed
@@ -24,7 +23,7 @@ void rev_string(char *s)
 
 	/** init array with lenght of previous string */
 
-	for (; count >= -1; count--)
+	for (; count >= 0; count--)
 	{
 		width_var[j] = s[count];
 		j++;
