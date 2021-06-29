@@ -17,7 +17,6 @@ void puts_half(char *str)
 		count++;
 	}
 
-	printf("Count is: %d\n", count);
 	if (count % 2 != 0)
 	{
 		count--;
