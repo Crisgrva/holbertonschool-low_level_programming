@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-* swap_int - Swap value of int *a to int *b
-* @a: variable to change the address
-* @b: variable to change the address
+* _strcat - Write a function that concatenates two strings.
+* @src: source to copy string
+* @dest: destiny
 * Return: 0
 */
 
