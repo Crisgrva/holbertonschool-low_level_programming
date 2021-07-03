@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * *leet - encodes a string into 1337.
@@ -8,20 +9,19 @@
 
 char *leet(char *n)
 {
+	char eng[] = {"aAeEoOtTlL"};
+	char leet[] = {"4433007711"};
 	int i;
+	int k;
 
-	for (i = 0; n[i] != '\n'; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		if (n[i] == 'a' || n[i] == 'A')
-			n[i] = '4';
-		else if (n[i] == 'e' || n[i] == 'E')
-			n[i] = '3';
-		else if (n[i] == 'o' || n[i] == 'O')
-			n[i] = '0';
-		else if (n[i] == 't' || n[i] == 'T')
-			n[i] = '7';
-		else if (n[i] == 'l' || n[i] == 'L')
-			n[i] = '1';
+		for (k = 0; k < 10; k++)
+		{
+			if (n[i] == eng[k])
+				n[i] = leet[k];
+		}
 	}
+
 	return (n);
 }
