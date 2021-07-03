@@ -1,4 +1,7 @@
-<h1 align="center">CrisGrVa Low-level programming & Algorithm - Hatching out</h1>
+<div align="center">
+<img width="100%" height = "250px" src="https://lh3.googleusercontent.com/d/1pGlPUv8px_na_LWwBComLPWCs7lfpbyq" alt="cover" />
+</div>
+<h1 align="center">Low-level programming & Algorithm - Hatching out</h1>
 <h3 align="center">Learning to program in C</h3>
 
 - 👋 0x00. C - Hello, World **Hello, World**
@@ -12,6 +15,8 @@
 - 🔁 0x04. C - More functions, more nested loops **More functions, more nested loops**
 
 - 🆕 0x05. C - Pointers, arrays and strings **Pointers, arrays and strings**
+
+- 🆕 0x06. C - More pointers, arrays and strings **More pointers, arrays and strings**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
