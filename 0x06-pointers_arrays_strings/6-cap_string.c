@@ -26,7 +26,7 @@ char *cap_string(char *n)
 				}
 			}
 		}
-		if (n[i] == '\n' || n[i] == 32)
+		if (n[i] == '\n' || n[i] == 32 || n[i] == 59)
 		{
 			i++;
 			if (n[i] >= 97 && n[i] <= 122)
