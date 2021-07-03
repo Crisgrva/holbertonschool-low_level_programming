@@ -1,40 +1,40 @@
 #include "holberton.h"
-
 /**
- * *cap_string - capitalizes all words of a string.
- * @n: String to capitalize
- * Return: string with all words capitalize.
+ * cap_string - check the code for Holberton School students.
+ *
+ * Return: Always char*
+ * @a: is a variable char*.
+ *
  */
-
-char *cap_string(char *n)
+char *cap_string(char *a)
 {
 	int i;
 
-	for (i = 0; n[i] != '\0'; i++)
+	for (i = 0; a[i] != '\0'; i++)
 	{
-		if ((n[i] >= 0 && n[i] <= 47) || (n[i] >= 58 && n[i] <= 64) ||
-			(n[i] >= 91 && n[i] <= 96) || (n[i] >= 123 && n[i] <= 127))
+		if (i == 0)
 		{
-			if (n[i] == 45)
+			if (a[i] >= 97 && a[i] <= 122)
 			{
-			}
-			else
-			{
-				i++;
-				if (n[i] >= 97 && n[i] <= 122)
-				{
-					n[i] = n[i] - 32;
-				}
+				a[i] = (a[i] - 32);
 			}
 		}
-		if (n[i] == '\n' || n[i] == ' ')
+		if (a[i] == ' ' || a[i] == ',' || a[i] == '"' || a[i] == '(' || a[i] == '.' || a[i] == ')' || a[i] == ';' || a[i] == '!' || a[i] == '?' || a[i] == '}' || a[i] == '{' || a[i] == '\t')
+		{
+			++i;
+			if (a[i] >= 97 && a[i] <= 122)
+			{
+				a[i] = (a[i] - 32);
+			}
+		}
+		if (a[i] == '\n' || a[i] == 32)
 		{
 			i++;
-			if (n[i] >= 97 && n[i] <= 122)
+			if (a[i] >= 97 && a[i] <= 122)
 			{
-				n[i] = n[i] - 32;
+				a[i] = (a[i] - 32);
 			}
 		}
 	}
-	return (n);
+	return (a);
 }
