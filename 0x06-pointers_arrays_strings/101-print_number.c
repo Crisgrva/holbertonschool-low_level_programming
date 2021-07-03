@@ -14,7 +14,7 @@ void print_number(int n)
 	case /* constant-expression */:
 		/* code */
 		break;
-	
+
 	default:
 		break;
 	}
