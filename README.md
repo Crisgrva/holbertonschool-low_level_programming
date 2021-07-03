@@ -1,5 +1,5 @@
 <div align="center">
-<img width="100%" height = "250px" src="https://lh3.googleusercontent.com/d/1pGlPUv8px_na_LWwBComLPWCs7lfpbyq" alt="cover" />
+<img width="100%" height = "auto" src="https://lh3.googleusercontent.com/d/1pGlPUv8px_na_LWwBComLPWCs7lfpbyq" alt="cover" />
 </div>
 <h1 align="center">Low-level programming & Algorithm - Hatching out</h1>
 <h3 align="center">Learning to program in C</h3>
