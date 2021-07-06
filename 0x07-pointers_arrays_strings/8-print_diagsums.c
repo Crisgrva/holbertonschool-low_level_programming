@@ -27,5 +27,5 @@ void print_diagsums(int *a, int size)
 	{
 		second_element += a[n];
 	}
-	printf("%d, %d\n'\0", first_element, second_element);
+	printf("%d, %d\n", first_element, second_element);
 }
