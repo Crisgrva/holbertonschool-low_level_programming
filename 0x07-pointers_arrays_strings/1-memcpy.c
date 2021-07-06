@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * _memset - function that fills memory with a constant byte.
- * @s: get constant byte from a pointer
- * @b: byte
+ * _memcpy - function that copies memory area.
+ * @dest: area whiteboard
+ * @src: get constant byte from a pointer
  * @n: bytes of the memory area
  * Return: Always 0
  */
