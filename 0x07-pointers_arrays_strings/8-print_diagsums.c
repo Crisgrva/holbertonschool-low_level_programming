@@ -23,9 +23,10 @@ void print_diagsums(int *a, int size)
 		first_element += a[i];
 	}
 
-	for (n = size - 1; n <= area_size - 1; n += (size - 1))
+	for (n = 0; n <= area_size - size; n += (size - 1))
 	{
-		second_element += a[n];
+		if (n != 0)
+			second_element += a[n];
 	}
 	printf("%d, %d\n", first_element, second_element);
 }
