@@ -16,14 +16,14 @@ void print_diagsums(int *a, int size)
 	int first_element = 0;
 	int second_element = 0;
 
-	area_size = size * size;
+	area_size = (size * size) - 1;
 
 	for (i = 0; i <= area_size; i += (size + 1))
 	{
 		first_element += a[i];
 	}
 
-	for (n = 0; n <= area_size - size; n += (size - 1))
+	for (n = 0; n <= area_size - 1; n += (size - 1))
 	{
 		second_element += a[n];
 	}
