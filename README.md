@@ -15,6 +15,8 @@
 
 - 🆕 0x06. C - More pointers, arrays and strings **More pointers, arrays and strings**
 
+- 🆕 0x07. C - Even more pointers, arrays and strings **Even more pointers, arrays and strings**
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/@crisgrvc" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@crisgrvc" height="30" width="40" /></a>
