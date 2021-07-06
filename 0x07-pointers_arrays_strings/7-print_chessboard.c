@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
- * _strstr - function that locates a substring.
- * @haystack: string to evaluate
- * @needle: substring to find
+ * print_chessboard - function that locates a substring.
+ * @a: chessboard
  * Return: substring finded
  */
 
