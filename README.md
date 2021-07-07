@@ -1,23 +1,23 @@
 <h1 align="center">Low-level programming & Algorithm - Hatching out</h1>
 <h3 align="center">Learning to program in C</h3>
 
-- 👋 0x00. C - Hello, World **Hello, World**
+- 👋 0x00. C - Hello, World
 
-- ✅ 0x03. C - Debugging **Debugging**
+- ✅ 0x03. C - Debugging
 
-- 🔀 0x01. C - Variables, if, else, while **Variables, if, else, while**
+- 🔀 0x01. C - Variables, if, else, while
 
-- 🔁 0x02. C - Functions, nested loops **Functions, nested loops**
+- 🔁 0x02. C - Functions, nested loops
 
-- 🔁 0x04. C - More functions, more nested loops **More functions, more nested loops**
+- 🔁 0x04. C - More functions, more nested loops
 
-- 🆕 0x05. C - Pointers, arrays and strings **Pointers, arrays and strings**
+- 🆕 0x05. C - Pointers, arrays and strings
 
-- 🆕 0x06. C - More pointers, arrays and strings **More pointers, arrays and strings**
+- 🆕 0x06. C - More pointers, arrays and strings
 
-- 🆕 0x07. C - Even more pointers, arrays and strings **Even more pointers, arrays and strings**
+- 🆕 0x07. C - Even more pointers, arrays and strings
 
-- 🔁 0x08. C - Recursion **Recursion**
+- 🔁 0x08. C - Recursion
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
