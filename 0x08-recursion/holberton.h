@@ -4,6 +4,6 @@ int _strlen_recursion(char *s);
 int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
+int _sqrt_recursion2(int m, int i);
 int is_prime_number(int n);
-int is_prime_num2(int m, int i);
 int _putchar(char c);
