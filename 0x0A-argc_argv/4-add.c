@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 		else if (isdigit(*argv[i]) == 0)
 		{
 			printf("Error\n");
-			return (0);
+			return (1);
 		}
 		else
 			sum += atoi(argv[i]);
