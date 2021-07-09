@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	if (*argv[0] == '\0')
 	{
 		printf("0\n");
-		return (0);
+		return (1);
 	}
 
 	for (j = 1; argv[j]; j++)
