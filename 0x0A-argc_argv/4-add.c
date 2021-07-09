@@ -13,15 +13,12 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int sum = 0;
-	if (*argv[0] == '\0')
-	{
-		printf("0\n");
-	}
+
 	for (i = 1; argv[i]; i++)
 	{
 		if (atoi(argv[i]) < 0)
 		{
-			printf("0");
+			printf("0\n");
 			return (1);
 		}
 		else if ((*argv[i] >= 0 && *argv[i] <= 47) || (*argv[i] >= 58 && *argv[i] <= 127))
