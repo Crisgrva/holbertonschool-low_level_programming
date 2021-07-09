@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		if ((*argv[i] >= 0 && *argv[i] <= 47) || (*argv[i] >= 58 && *argv[i] <= 127))
 		{
 			printf("Error\n");
-			return (1);
+			return (0);
 		}
 		sum += atoi(argv[i]);
 	}
