@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	if (sum_alpha == j)
 	{
 		printf("0\n");
-		return (1);
+		return (0);
 	}
 
 	for (i = 1; argv[i]; i++)
