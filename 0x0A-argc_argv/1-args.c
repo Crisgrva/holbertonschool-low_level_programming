@@ -18,4 +18,6 @@ int main(int argc, char *argv[])
 	i--; /** Convert index to absolute **/
 	printf("%d\n", i);
 	(void)argc;
+
+	return (0);
 }
