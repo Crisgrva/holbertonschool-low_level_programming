@@ -13,12 +13,28 @@
 int main(int argc, char *argv[])
 {
 	int i;
+	int j;
+	int sum_alpha = 0;
 	int sum = 0;
 
 	if (*argv[0] == '\0')
 	{
 		printf("0\n");
 	}
+	for (j = 0; argv[j]; j++)
+	{
+		if (isdigit(*argv[j]) == 0)
+		{
+			sum_alpha += 1;
+		}
+	}
+
+	if (sum_alpha == j)
+	{
+		printf("0\n");
+		return (0);
+	}
+
 	for (i = 1; argv[i]; i++)
 	{
 		if (atoi(argv[i]) < 0)
