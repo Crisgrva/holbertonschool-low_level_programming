@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		if (atoi(argv[i]) < 0)
 		{
 			printf("Error\n");
-			return (1);
+			return (0);
 		}
 		else if (isdigit(*argv[i]) == 0)
 		{
