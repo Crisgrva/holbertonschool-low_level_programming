@@ -13,7 +13,10 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int sum = 0;
-
+	if (*argv[0] == '\0')
+	{
+		printf("0\n");
+	}
 	for (i = 1; argv[i]; i++)
 	{
 		if ((*argv[i] >= 0 && *argv[i] <= 47) || (*argv[i] >= 58 && *argv[i] <= 127))
