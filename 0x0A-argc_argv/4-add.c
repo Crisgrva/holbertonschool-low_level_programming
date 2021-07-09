@@ -22,12 +22,12 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	}
 
-	for (j = 0; argv[j]; j++)
+	for (j = 1; argv[j]; j++)
 	{
 		if (isdigit(*argv[j]) == 0)
 			sum_alpha += 1;
 	}
-
+	j--;
 	if (sum_alpha == j)
 	{
 		printf("0\n");
@@ -51,5 +51,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", sum);
 	(void)argc;
-	return (0);
 }
