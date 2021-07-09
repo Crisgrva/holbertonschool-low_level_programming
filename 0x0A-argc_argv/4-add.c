@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int sum_alpha = 0;
 	int sum = 0;
 
-	if (*argv[0] == '\0')
+	if (*argv[1] == '\0')
 	{
 		printf("0\n");
 		return (0);
@@ -36,7 +36,12 @@ int main(int argc, char *argv[])
 
 	for (i = 1; argv[i]; i++)
 	{
-		if (isdigit(*argv[i]) == 0)
+		if (atoi(argv[i]) < 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else if (isdigit(*argv[i]) == 0)
 		{
 			printf("Error\n");
 			return (1);
