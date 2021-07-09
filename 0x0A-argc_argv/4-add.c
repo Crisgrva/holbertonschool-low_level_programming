@@ -12,15 +12,14 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int j;
+	int i, int j;
 	int sum_alpha = 0;
 	int sum = 0;
 
 	if (*argv[0] == '\0')
 	{
 		printf("0\n");
-		return (1);
+		return (0);
 	}
 
 	for (j = 1; argv[j]; j++)
