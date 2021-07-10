@@ -60,13 +60,4 @@
 <li>A <code>README.md</code> file, at the root of the folder of the project, describing what each script is doing</li>
 <li>All your files must be executable</li>
 </ul>
-
-<h2>More Info</h2>
-
-<p>You do not need to learn about dynamic libraries, yet.</p>
-
-<h3>Manual QA Review</h3>
-
-<p><strong>It is your responsibility to request a review for your blog from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.</strong></p>
-
 </div>
