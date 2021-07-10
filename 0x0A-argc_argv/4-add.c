@@ -16,12 +16,11 @@ int main(int argc, char *argv[])
 	int sum_alpha = 0;
 	int sum = 0;
 
-	if (*argv[1] == '\0')
+	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-
 	for (j = 1; argv[j]; j++)
 	{
 		if (isdigit(*argv[j]) == 0)
