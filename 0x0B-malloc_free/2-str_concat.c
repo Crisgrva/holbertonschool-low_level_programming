@@ -17,7 +17,7 @@ char *str_concat(char *s1, char *s2)
 	int count_s1 = strlen(s1);
 	int count_s2 = strlen(s2);
 
-	char *new_s = malloc((count_s1 + count_s2) * sizeof(char));
+	char *new_s = malloc(((count_s1 + count_s2) * sizeof(char)) + 1);
 
 	if (new_s == 0)
 		return (NULL);
