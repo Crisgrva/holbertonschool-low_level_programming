@@ -14,10 +14,29 @@ char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
 	int j = 0;
-	int count_s1 = strlen(s1);
-	int count_s2 = strlen(s2);
+	int count_s1;
+	int count_s2;
+	char *new_s;
 
-	char *new_s = malloc(((count_s1 + count_s2) * sizeof(char)) + 1);
+	if (s1 == 0)
+	{
+		s1 = s2;
+		count_s1 = strlen(s1);
+		count_s2 = strlen(s2);
+	}
+	else if (s2 == 0)
+	{
+		s2 = s1;
+		count_s1 = strlen(s1);
+		count_s2 = strlen(s2);
+	}
+	else
+	{
+		count_s1 = strlen(s1);
+		count_s2 = strlen(s2);
+	}
+
+	new_s = malloc(((count_s1 + count_s2) * sizeof(char)) + 1);
 
 	if (new_s == 0)
 		return (NULL);
