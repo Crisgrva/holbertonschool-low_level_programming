@@ -37,10 +37,13 @@ int **alloc_grid(int width, int height)
 
 		for (j = 0; j < width; j++)
 		{
+			if (canvas[i][j] == NULL)
+			{
+				free(canvas);
+				return (NULL)
+			}
 			canvas[i][j] = 0;
 		}
 	}
-	if (canvas != 0)
-		free(canvas);
 	return (canvas);
 }
