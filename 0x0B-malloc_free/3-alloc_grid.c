@@ -19,12 +19,6 @@ int **alloc_grid(int width, int height)
 
 	canvas = malloc(height * sizeof(int *));
 
-	if (canvas == NULL)
-	{
-		free(canvas);
-		return (NULL);
-	}
-
 	for (i = 0; i < height; i++)
 	{
 		canvas[i] = malloc(width * sizeof(int));
@@ -37,13 +31,13 @@ int **alloc_grid(int width, int height)
 
 		for (j = 0; j < width; j++)
 		{
-			if (canvas[i][j] == NULL)
-			{
-				free(canvas);
-				return (NULL);
-			}
 			canvas[i][j] = 0;
 		}
+	}
+	if (canvas == NULL)
+	{
+		free(canvas);
+		return (NULL);
 	}
 	return (canvas);
 }
