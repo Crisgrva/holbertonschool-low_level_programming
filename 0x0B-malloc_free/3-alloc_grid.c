@@ -34,5 +34,6 @@ int **alloc_grid(int width, int height)
 			canvas[i][j] = 0;
 		}
 	}
+	free(canvas);
 	return (canvas);
 }
