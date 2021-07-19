@@ -1,6 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 
+/* STRUCTURES */
 /**
  * struct dog - dog information
  * @name: Dog's Name
@@ -16,4 +17,8 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/* PROTOTYPES */
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif /* DOG_H */
