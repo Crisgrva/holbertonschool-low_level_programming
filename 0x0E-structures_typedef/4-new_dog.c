@@ -24,8 +24,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	my_dog->name = malloc(sizeof(name));
-	my_dog->owner = malloc(sizeof(owner));
+	my_dog->name = malloc(sizeof(name) + 1);
+	my_dog->owner = malloc(sizeof(owner + 1));
 
 	if (my_dog->name == NULL || my_dog->owner == NULL)
 	{
@@ -36,9 +36,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	for (i = 0; i < strlen(name); i++)
 		my_dog->name[i] = name[i];
+	i++;
+	my_dog->name[i] = '\0';
 
 	for (i = 0; i < strlen(owner); i++)
 		my_dog->owner[i] = owner[i];
+	i++;
+	my_dog->owner[i] = '\0';
 
 	my_dog->age = age; /* Dont allocate in memory */
 
