@@ -42,6 +42,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	my_dog->age = age; /* Dont allocate in memory */
 
-	free(my_dog);
 	return (my_dog);
 }
