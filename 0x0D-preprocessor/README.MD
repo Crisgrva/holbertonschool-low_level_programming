@@ -46,5 +46,4 @@
 <li>Don&rsquo;t forget to push your header file</li>
 <li>All your header files should be include guarded</li>
 </ul>
-
 </div>
