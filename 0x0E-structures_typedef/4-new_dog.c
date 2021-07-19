@@ -20,6 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (my_dog == NULL || name == NULL || owner == NULL)
 	{
+		free(my_dog);
 		return (NULL);
 	}
 
@@ -28,6 +29,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (my_dog->name == NULL || my_dog->owner == NULL)
 	{
+		free(my_dog->name);
+		free(my_dog->owner);
+		free(my_dog);
 		return (NULL);
 	}
 	for (i = 0; i < sizeof(name); i++)
@@ -38,5 +42,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	my_dog->age = age; /* Dont allocate in memory */
 
+	free(my_dog);
 	return (my_dog);
 }
