@@ -19,6 +19,7 @@ typedef struct dog
 	char *owner;
 } dog;
 
+/* New Type based on dog */
 typedef dog dog_t;
 dog_t *newBorn(char *name, int age, char *owner);
 
