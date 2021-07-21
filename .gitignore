@@ -3,3 +3,5 @@ testing/
 .vscode/
 .DS_Store
 [a-z]
+*~
+~*
