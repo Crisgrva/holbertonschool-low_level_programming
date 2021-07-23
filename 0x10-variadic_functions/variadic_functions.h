@@ -3,6 +3,7 @@
 
 /*  STD LIBRARIES   */
 #include <stdio.h>
+#include <stdarg.h>
 /*  END_STD LIBRARIES   */
 
 /*  PROTOTYPES  */
