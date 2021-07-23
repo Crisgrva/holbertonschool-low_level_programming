@@ -1,5 +1,6 @@
 pld_Debugging/
 testing/
+Calculator/
 .vscode/
 .DS_Store
 [a-z]
@@ -7,3 +8,4 @@ testing/
 ~*
 .out~
 ~.out
+main.c*
