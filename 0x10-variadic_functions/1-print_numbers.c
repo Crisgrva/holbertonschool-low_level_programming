@@ -15,18 +15,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	/* Initialize the argument list. */
 	va_start(ap, n);
 
-	/*If separator is NULL, don’t print it */
-	if (separator == NULL)
-		separator = "";
-
 	/* print every number of arguments with separator */
 	while (i < n)
 	{
 		printf("%d", va_arg(ap, int));
 
-		/* print separator until before the last item */
-		if (i != (n - 1))
+		if (separator != NULL && i != (n - 1))
+		{
 			printf("%s ", separator);
+		}
 		i++;
 	}
 
