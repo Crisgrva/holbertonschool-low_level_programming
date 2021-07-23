@@ -10,24 +10,20 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	unsigned int i = 0;
-
-	/* Initialize the argument list. */
+	unsigned int i;
 	va_start(ap, n);
 
-	/* print every number of arguments with separator */
-	while (i < n)
+	if (n == 0)
+		return (0);
+
+	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(ap, int));
 
 		if (separator != NULL && i != (n - 1))
-		{
 			printf("%s ", separator);
-		}
-		i++;
 	}
-
 	printf("\n");
-	/* Clean up. */
+
 	va_end(ap);
 }
