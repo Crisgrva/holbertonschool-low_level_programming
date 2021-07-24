@@ -38,10 +38,8 @@ void print_float(va_list f)
 void print_char_p(va_list s)
 {
 	char *strn = va_arg(s, char *);
-	if (strn == NULL)
-		printf("(nil)");
-	else
-		printf("%s", strn);
+
+	(strn == NULL) ? printf("(nil)") : printf("%s", strn);
 }
 
 /**
@@ -64,7 +62,7 @@ void print_all(const char *const format, ...)
 	va_start(list, format);
 	while (i < 4)
 	{
-		while (format[j] != '\0')
+		while (j < 4)
 		{
 			if (format[j] == *(argum[i].name))
 			{
