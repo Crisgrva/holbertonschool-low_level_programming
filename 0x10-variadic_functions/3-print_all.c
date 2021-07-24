@@ -58,21 +58,23 @@ void print_all(const char *const format, ...)
 		{"s", print_char_p},
 		{NULL, NULL}};
 	int i = 0, j = 0;
+	char *sep = "";
 
 	va_start(list, format);
-	while (i <= 4)
+	while (format[i] && format)
 	{
-		while (format[j] != '\0')
+		j = 0;
+		while (argum[j].name)
 		{
-			if (format[j] == *(argum[i].name))
+			if (format[i] == *(argum[j].name))
 			{
-				argum[i].f(list);
-				if (j != 3)
-					printf(", ");
+				printf("%s", sep);
+				argum[j].f(list);
+				sep = ", ";
+				break;
 			}
 			j++;
 		}
-		j = 0;
 		i++;
 	}
 	printf("\n");
