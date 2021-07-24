@@ -39,7 +39,10 @@ void print_char_p(va_list s)
 {
 	char *strn = va_arg(s, char *);
 
-	(strn == NULL) ? printf("(nil)") : printf("%s", strn);
+	if (strn == NULL)
+		printf("(nil)");
+	else
+		printf("%s", strn);
 }
 
 /**
@@ -60,20 +63,20 @@ void print_all(const char *const format, ...)
 	int i = 0, j = 0;
 	char *sep = "";
 	va_start(list, format);
-	while (i < 4)
+	while (argum[i].name)
 	{
-		while (j < 4)
+		j = 0;
+		while (format[j])
 		{
 			if (format[j] == *(argum[i].name))
 			{
 				printf("%s", sep);
-				argum[j].f(list);
+				argum[i].f(list);
 				sep = ", ";
 				break;
 			}
 			j++;
 		}
-		j = 0;
 		i++;
 	}
 	printf("\n");
