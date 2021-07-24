@@ -62,7 +62,9 @@ void print_all(const char *const format, ...)
 		{NULL, NULL}};
 	int i = 0, j = 0;
 	char *sep = "";
+
 	va_start(list, format);
+
 	while (argum[i].name)
 	{
 		j = 0;
