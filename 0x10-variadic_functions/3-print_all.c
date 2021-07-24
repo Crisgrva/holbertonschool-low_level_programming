@@ -62,13 +62,15 @@ void print_all(const char *const format, ...)
 	va_start(list, format);
 	while (i < 4)
 	{
-		while (j < 4)
+		while (format[j] != '\0')
 		{
 			if (format[j] == *(argum[i].name))
 			{
 				argum[i].f(list);
-				if (j != 3)
+				if ((format[j] == 'c' || format[j] == 'i' || format[j] == 'f'
+					|| format[j] == 's') && (format[j + 1] != '\0'))
 					printf(", ");
+
 			}
 			j++;
 		}
