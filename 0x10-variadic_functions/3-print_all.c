@@ -37,7 +37,10 @@ void print_float(va_list f)
 
 void print_char_p(va_list s)
 {
-	printf("%s", va_arg(s, char *));
+	if (va_arg(s, char *) == NULL)
+		printf("(nil)");
+	else
+		printf("%s", va_arg(s, char *));
 }
 
 /**
