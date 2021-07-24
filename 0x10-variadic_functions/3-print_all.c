@@ -7,7 +7,7 @@
 
 void print_char(va_list c)
 {
-	printf("%c", va_arg(c, int));
+	printf("%c, ", va_arg(c, int));
 }
 
 /**
@@ -17,7 +17,7 @@ void print_char(va_list c)
 
 void print_int(va_list i)
 {
-	printf("%d", va_arg(i, int));
+	printf("%d, ", va_arg(i, int));
 }
 
 /**
@@ -27,7 +27,7 @@ void print_int(va_list i)
 
 void print_float(va_list f)
 {
-	printf("%f", va_arg(f, double));
+	printf("%f, ", va_arg(f, double));
 }
 
 /**
@@ -38,8 +38,10 @@ void print_float(va_list f)
 void print_char_p(va_list s)
 {
 	char *strn = va_arg(s, char *);
-
-	(strn == NULL) ? printf("(nil)") : printf("%s", strn);
+	if (strn == NULL)
+		printf("(nil)");
+	else
+		printf("%s", strn);
 }
 
 /**
@@ -62,15 +64,11 @@ void print_all(const char *const format, ...)
 	va_start(list, format);
 	while (i < 4)
 	{
-		while (format[j] != '\0')
+		while (j < 4)
 		{
 			if (format[j] == *(argum[i].name))
 			{
 				argum[i].f(list);
-				if ((format[j] == 'c' || format[j] == 'i' || format[j] == 'f'
-					|| format[j] == 's') && (format[j + 1] != '\0'))
-					printf(", ");
-
 			}
 			j++;
 		}
