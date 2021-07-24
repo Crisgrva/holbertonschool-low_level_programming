@@ -38,8 +38,10 @@ void print_float(va_list f)
 void print_char_p(va_list s)
 {
 	char *strn = va_arg(s, char *);
-
-	(strn == NULL) ? printf("(nil)") : printf("%s", strn);
+	if (strn == NULL)
+		printf("(nil)");
+	else
+		printf("%s", strn);
 }
 
 /**
