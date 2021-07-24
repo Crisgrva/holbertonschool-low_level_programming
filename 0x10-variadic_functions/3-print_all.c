@@ -60,9 +60,9 @@ void print_all(const char *const format, ...)
 	int i = 0, j = 0;
 
 	va_start(list, format);
-	while (i < 4)
+	while (i <= 4)
 	{
-		while (j < 4)
+		while (format[j] != '\0')
 		{
 			if (format[j] == *(argum[i].name))
 			{
