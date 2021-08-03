@@ -12,6 +12,9 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	/* 1. allocate node */
 	listint_t *new_node = (listint_t *)malloc(sizeof(listint_t));
 
+	if (new_node == NULL)
+		return (NULL);
+
 	/* 2. put in the data  */
 	new_node->n = n;
 
