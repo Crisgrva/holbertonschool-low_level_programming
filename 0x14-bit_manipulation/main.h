@@ -3,7 +3,6 @@
 
 /* STD LIBRARIES */
 #include <stdlib.h>
-#include <stdio.h>
 
 /* PROTOTYPES */
 unsigned int binary_to_uint(const char *b);

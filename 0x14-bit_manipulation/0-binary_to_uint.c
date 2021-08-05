@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; b[i]; i++)
 	{
-		if (i == '1')
+		if (i > 0)
 			pwd = pwd * 2;
 
 		if (b[i] != '1' && b[i] != '0')
