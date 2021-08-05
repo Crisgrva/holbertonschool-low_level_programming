@@ -9,34 +9,25 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int pwd = 1;
-	int i = 0, j;
-	unsigned int result = 0;
+	unsigned int pwd = 1, result = 0;
+	int i, j;
 
 	if (!b || b == 0)
 		return (0);
 
-	while (*b != '\0')
+	for (i = 0; b[i]; i++)
 	{
-		if (i > 0 && *b == '1')
+		if (i > 0)
 			pwd = pwd * 2;
 
-		if (*b != '1' && *b != '0')
+		if (b[i] != '1' && b[i] != '0')
 			return (0);
-		b++;
-		i++;
 	}
-	while (i > 0)
+	for (j = 0; b[j]; j++)
 	{
-		b--;
-		i--;
-	}
-	while (*b != '\0')
-	{
-		if (*b == '1')
+		if (b[j] == '1')
 			result += 1 * pwd;
 		pwd = pwd / 2;
-		b++;
 	}
 	return (result);
 }
