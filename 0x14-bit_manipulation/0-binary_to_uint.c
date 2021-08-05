@@ -18,10 +18,13 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; b[i]; i++)
 	{
-		if (i > 0)
+		if (i == '1')
+		{
 			pwd = pwd * 2;
+			continue;
+		}
 
-		if (b[i] != '1' && b[i] != '0')
+		if (b[i] != '0')
 			return (0);
 	}
 
