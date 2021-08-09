@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		exit(97); }
 	fd_1 = open(argv[1], O_RDONLY);
 	read_1 = read(fd_1, buffer_1, 1024);
-	if (fd_1 < 0)
+	if (read_1 < 0)
 	{	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98); }
 	while (buffer_1[length])
@@ -28,8 +28,9 @@ int main(int argc, char *argv[])
 	if (fd_2 < 0 || write_2 != length)
 	{	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99); }
-	if (close_1 < 0 || close_2 < 0)
-	{	close_1 = close(fd_1);
+	else
+	{
+		close_1 = close(fd_1);
 		if (close_1 < 0)
 		{	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_1);
 			exit(100); }
