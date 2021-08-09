@@ -20,7 +20,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	writen = write(1, buffer, n);
 
 	if (!filename || fd == -1 || n == -1 || !buffer)
+	{
+		free(buffer);
 		return (0);
+	}
 
 	close(fd);
 	free(buffer);
