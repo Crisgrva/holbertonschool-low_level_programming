@@ -19,7 +19,7 @@ int main(int argc, char *av[])
 	if (fd_1 < 0)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 
-	fd_2 = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 00664);
+	fd_2 = open(av[2], O_CREAT | O_WRONLY, 00664);
 
 	if (fd_2 < 0)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
