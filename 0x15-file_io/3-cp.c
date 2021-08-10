@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	}
 	while (buffer_1[length])
 		length++;
-	fd_2 = open(argv[2], O_CREAT | O_WRONLY, 0664 | S_IWGRP);
+	fd_2 = open(argv[2], O_CREAT | O_WRONLY, 0664);
 	write_2 = write(fd_2, buffer_1, length);
 
 	if (fd_2 < 0 || write_2 != length)
