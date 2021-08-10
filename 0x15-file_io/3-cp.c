@@ -25,8 +25,11 @@ int main(int argc, char *av[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 
 	while ((read_1 = read(fd_1, buffer_1, 1024)) > 0)
-		if ((write_2 = write(fd_2, buffer_1, read_1)) < 0)
+	{
+		write_2 = write(fd_2, buffer_1, read_1);
+		if (write_2 < 0)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
+	}
 
 	if (read_1 < 0)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
