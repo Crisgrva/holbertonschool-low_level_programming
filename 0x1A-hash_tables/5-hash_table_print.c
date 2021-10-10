@@ -11,6 +11,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht == NULL)
 		return;
+
 	for (tmp_last_idx = 0; tmp_last_idx < ht->size; tmp_last_idx++)
 	{
 		if (ht->array[tmp_last_idx])
