@@ -66,14 +66,15 @@ hash_node_t *hash_table_create_item(const char *key, const char *value)
 	new_item->key = (char *)malloc(strlen(key) + 1);
 	if (!new_item->key)
 	{
-		free(new_item->key);
+		free(new_item);
 		return (NULL);
 	}
 
 	new_item->value = (char *)malloc(strlen(value) + 1);
 	if (!new_item->value)
 	{
-		free(new_item->value);
+		free(new_item->key);
+		free(new_item);
 		return (NULL);
 	}
 
